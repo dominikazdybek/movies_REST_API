@@ -96,7 +96,7 @@ GET | POST
 
 * **POST**
   * **Code:** HTTP_201_CREATED <br />
-    **Content:**  
+  * **Content:**  
 ```
     {
         "title": "Skazani na Shawshank",
@@ -104,14 +104,14 @@ GET | POST
         "director_name": "Frank Darabont",
         "actors_list": "",
         "year": 1994
-    },
+    }
 ```
 
 ### Error Response
 
 * **POST**
   * **Code:** HTTP_400_BAD_REQUEST <br />
-    **Content:** {error: 'Wrong JSON'}
+  * **Content:** {error: 'Wrong JSON'}
 
 
 ## MOVIE
@@ -132,7 +132,7 @@ GET | POST
 
 * **GET**
   * **Code:** 200 <br />
-    **Content:**
+  * **Content:**
 ```
     {
         "title": "Skazani na Shawshank",
@@ -140,37 +140,35 @@ GET | POST
         "director_name": "Frank Darabont",
         "actors_list": "",
         "year": 1994
-    },
+    }
 ```
 
 * **DELETE**
-  * **Code:** HTTP_204_NO_CONTENT
-    **Content:** ` `
+  * **Code:** HTTP_204_NO_CONTENT <br />
+  * **Content:** ` `
 
 * **PUT**
   * **Code:** 200 <br />
-    **Content:**
+  * **Content:**
 ``` 
-[
-    {
+   {
         "title": "Skazani na Shawshank",
         "description": "Adaptacja opowiadania Stephena Kinga. Niesłusznie skazany na dożywocie bankier, stara się przetrwać w brutalnym, więziennym świecie.",
         "director_name": "Frank Darabont",
         "actors_list": "",
         "year": 1995
-    },
-]
+    }
 ```
 
 ### Error Response:
 
 * **GET**
-  * **Code:** 404
-    **Content:** {error: 'DoesNotExist'}
+  * **Code:** 404 <br />
+  * **Content:** {error: 'DoesNotExist'}
 
 * **PUT**
-  * **Code:** HTTP_400_BAD_REQUEST
-    **Content:** `{error: 'Wrong JSON'}`
+  * **Code:** HTTP_400_BAD_REQUEST <br />
+  * **Content:** {error: 'Wrong JSON'}
 
 
 ## PEOPLE
@@ -195,7 +193,7 @@ GET | POST
 
 * **GET**
   * **Code:** 200 <br />
-    **Content:**
+  * **Content:**
  
 ```
 [
@@ -209,9 +207,9 @@ GET | POST
 
 * **POST**
   * **Code:** HTTP_201_CREATED <br />
-    **Content:**  
+  * **Content:**  
 ```
-{
+   {
         "id": 2,
         "name": "Tom Hanks"   
     },
@@ -221,7 +219,7 @@ GET | POST
 
 * **POST**
   * **Code:** HTTP_400_BAD_REQUEST <br />
-    **Content:** {error: 'Wrong JSON'}
+  * **Content:** {error: 'Wrong JSON'}
 
 
 ## PERSON
@@ -242,7 +240,7 @@ GET | POST
 
 * **GET**
   * **Code:** 200 <br />
-    **Content:**
+  * **Content:**
 ```
     {
         "id": 1,
@@ -251,12 +249,12 @@ GET | POST
 ```
 
 * **DELETE**
-  * **Code:** HTTP_204_NO_CONTENT
-    **Content:** ` `
+  * **Code:** HTTP_204_NO_CONTENT <br />
+  * **Content:** ` `
 
 * **PUT**
   * **Code:** 200 <br />
-    **Content:**
+  * **Content:**
 ``` 
   {
         "id": 1,
@@ -268,22 +266,9 @@ GET | POST
 ### Error Response:
 
 * **GET**
-  * **Code:** 404
-    **Content:** {error: 'DoesNotExist'}
+  * **Code:** 404 <br />
+  * **Content:** {error: 'DoesNotExist'}
 
 * **PUT**
-  * **Code:** HTTP_400_BAD_REQUEST
-    **Content:** `{error: 'Wrong JSON'}`
-
-
-
-
-
-
-
-
-
-
-
-
-
+  * **Code:** HTTP_400_BAD_REQUEST <br />
+  * **Content:** {error: 'Wrong JSON'}
